@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-style: italic; */
+}
+
+:root{
+    --color2: black;
+}
+
+header {
+    > h1 {
+        padding: 1%;
+        background-color: var(--color2);
+        color: #F9ECCC;
+        font-size: 7vw;
+    }
+}
+
+img {
+    /* display: block; */
+    /* width: 100%;
+    height: 100%; */
+    pointer-events: none;
+    /* object-fit: cover; */
+  }
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: #F9ECCC;
+    .image{
+        flex: 1;
+        max-width: 50%;
+        height: auto;
+        /* min-width: 50%; */
+        /* height: auto; */
+        /* min-height: 810px; */
+        /* background-size: auto; */
+        /* background-image: url(pic3.jpg); */
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        /* background-position: top right; */
+        /* min-height: 83vh; */
+        /* https://i.pinimg.com/originals/04/4f/73/044f7316c81a344650f056bbb8b98006.jpg */
+    }
+    .text1{
+        padding: 5%;
+        margin-top: 5%;
+        /* flex: 1; */
+        font-size: larger;
+        .button{
+            padding: 1% 2%;
+            margin-top: 5%;
+            border: 1px solid;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff7e2;
+            background-color: var(--color2);
+            cursor: pointer;
+        }
+        .button:hover{
+            border: 1px solid var(--color2) ;
+        }
+    }
+}
+
+
+
+footer {
+    background-color: var(--color2);
+    padding: 2%;
+    .text2{
+        color: #F9ECCC;
+        color: #fff7e2;
+    }
+}
+
+/* @media(max-width: 1050px){
+    .main text{
+        
+    }
+} */
+
+/* @media(max-width: 700px){
+    .main image{
+        background-position: top left;
+        background-size: 700px 800px;
+        max-height: 800px;
+    }
+} */
+/* 
+@media (max-width: 860px) {
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+  } */
+@media(min-width: 1439px){
+    .text1{
+        font-size: xx-large;
+    }
+}
